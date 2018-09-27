@@ -1,8 +1,5 @@
 <types>
   <type name="CreateRepository" desc="Options to create a repository.">
-    <prop name="token" type="string">
-      The access token.
-    </prop>
     <prop opt string name="org">
       The organisation on which to create the repository (if not adding to the user account).
     </prop>

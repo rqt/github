@@ -1,7 +1,6 @@
 /**
  * Create a new repository for the authenticated user.
  * @param {CreateRepository} options Options to create a repository.
- * @param {string} options.token The access token.
  * @param {string} [options.org] The organisation on which to create the repository (if not adding to the user account).
  * @param {string} options.name The name of the repository.
  * @param {string} [options.description] A short description of the repository.
@@ -43,7 +42,6 @@ module.exports=create
 /* documentary types/api/repos/create.xml */
 /**
  * @typedef {Object} CreateRepository Options to create a repository.
- * @prop {string} token The access token.
  * @prop {string} [org] The organisation on which to create the repository (if not adding to the user account).
  * @prop {string} name The name of the repository.
  * @prop {string} [description] A short description of the repository.
