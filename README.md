@@ -15,8 +15,6 @@ yarn add -E @rqt/github
 - [`constructor(token?: string): GitHub`](#constructortoken-string-github)
 - [**Repositories**](#repositories)
   * [`async create(options: CreateRepository): Repository`](#async-createoptions-createrepository-repository)
-    * [`CreateRepository`](#type-createrepository)
-    * [`Repository`](#type-repository)
   * [`async delete(owner: string, name: string)`](#async-deleteowner-stringname-string-void)
 - [Types](#types)
   * [`Owner`](#type-owner)
