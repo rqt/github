@@ -2,13 +2,17 @@ import request from './lib'
 import repos from './api/repos'
 import activity from './api/activity'
 
-const bind = (scope, instance) => {
-  return Object.keys(scope).reduce((acc, k) => {
-    return {
-      ...acc,
-      [k]: scope[k].bind(instance),
-    }
-  }, {})
+const proxy = (scope, instance) => {
+  const p = new Proxy(scope, {
+    get(target, key) {
+      const v = target[key]
+      if (typeof v == 'function') {
+        return v.bind(instance)
+      }
+      return v
+    },
+  })
+  return p
 }
 
 /**
@@ -22,9 +26,9 @@ export default class GitHub {
   constructor(token) {
     this._token = token
     /** @type {repos} */
-    this.repos = bind(repos, this)
+    this.repos = proxy(repos, this)
     /** @type {activity} */
-    this.activity = bind(activity, this)
+    this.activity = proxy(activity, this)
   }
   async _request(opts = {}) {
     const res = await request({
