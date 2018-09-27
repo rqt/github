@@ -1,4 +1,4 @@
-## Repositories
+## **Repositories**
 
 These methods allow to work with repositories.
 

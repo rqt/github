@@ -13,7 +13,7 @@ yarn add -E @rqt/github
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
 - [`constructor(token?: string): GitHub`](#constructortoken-string-github)
-- [Repositories](#repositories)
+- [**Repositories**](#repositories)
   * [`async create(options: CreateRepository): Repository`](#async-createoptions-createrepository-repository)
     * [`CreateRepository`](#type-createrepository)
     * [`Repository`](#type-repository)
@@ -78,7 +78,7 @@ Deleted a repository
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
-## Repositories
+## **Repositories**
 
 These methods allow to work with repositories.
 
