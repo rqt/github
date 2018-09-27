@@ -1,0 +1,81 @@
+<types>
+  <type name="Repository">
+    <prop number name="id">1296269</prop>
+    <prop string name="node_id">MDEwOlJlcG9zaXRvcnkxMjk2MjY5</prop>
+    <prop string name="name">Hello-World</prop>
+    <prop string name="full_name">octocat/Hello-World</prop>
+    <prop boolean name="private">false</prop>
+    <prop string name="html_url">https://github.com/octocat/Hello-World</prop>
+    <prop string name="description">This your first repo!</prop>
+    <prop boolean name="fork">true</prop>
+    <prop string name="url">https://api.github.com/repos/octocat/Hello-World</prop>
+    <prop string name="archive_url">http://api.github.com/repos/octocat/Hello-World/{archive_format}{/ref}</prop>
+    <prop string name="assignees_url">http://api.github.com/repos/octocat/Hello-World/assignees{/user}</prop>
+    <prop string name="blobs_url">http://api.github.com/repos/octocat/Hello-World/git/blobs{/sha}</prop>
+    <prop string name="branches_url">http://api.github.com/repos/octocat/Hello-World/branches{/branch}</prop>
+    <prop string name="collaborators_url">http://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator}</prop>
+    <prop string name="comments_url">http://api.github.com/repos/octocat/Hello-World/comments{/number}</prop>
+    <prop string name="commits_url">http://api.github.com/repos/octocat/Hello-World/commits{/sha}</prop>
+    <prop string name="compare_url">http://api.github.com/repos/octocat/Hello-World/compare/{base}...{head}</prop>
+    <prop string name="contents_url">http://api.github.com/repos/octocat/Hello-World/contents/{+path}</prop>
+    <prop string name="contributors_url">http://api.github.com/repos/octocat/Hello-World/contributors</prop>
+    <prop string name="deployments_url">http://api.github.com/repos/octocat/Hello-World/deployments</prop>
+    <prop string name="downloads_url">http://api.github.com/repos/octocat/Hello-World/downloads</prop>
+    <prop string name="events_url">http://api.github.com/repos/octocat/Hello-World/events</prop>
+    <prop string name="forks_url">http://api.github.com/repos/octocat/Hello-World/forks</prop>
+    <prop string name="git_commits_url">http://api.github.com/repos/octocat/Hello-World/git/commits{/sha}</prop>
+    <prop string name="git_refs_url">http://api.github.com/repos/octocat/Hello-World/git/refs{/sha}</prop>
+    <prop string name="git_tags_url">http://api.github.com/repos/octocat/Hello-World/git/tags{/sha}</prop>
+    <prop string name="git_url">git:github.com/octocat/Hello-World.git</prop>
+    <prop string name="issue_comment_url">http://api.github.com/repos/octocat/Hello-World/issues/comments{/number}</prop>
+    <prop string name="issue_events_url">http://api.github.com/repos/octocat/Hello-World/issues/events{/number}</prop>
+    <prop string name="issues_url">http://api.github.com/repos/octocat/Hello-World/issues{/number}</prop>
+    <prop string name="keys_url">http://api.github.com/repos/octocat/Hello-World/keys{/key_id}</prop>
+    <prop string name="labels_url">http://api.github.com/repos/octocat/Hello-World/labels{/name}</prop>
+    <prop string name="languages_url">http://api.github.com/repos/octocat/Hello-World/languages</prop>
+    <prop string name="merges_url">http://api.github.com/repos/octocat/Hello-World/merges</prop>
+    <prop string name="milestones_url">http://api.github.com/repos/octocat/Hello-World/milestones{/number}</prop>
+    <prop string name="notifications_url">http://api.github.com/repos/octocat/Hello-World/notifications{?since,all,participating}</prop>
+    <prop string name="pulls_url">http://api.github.com/repos/octocat/Hello-World/pulls{/number}</prop>
+    <prop string name="releases_url">http://api.github.com/repos/octocat/Hello-World/releases{/id}</prop>
+    <prop string name="ssh_url">git&#064;github.com:octocat/Hello-World.git</prop>
+    <prop string name="stargazers_url">http://api.github.com/repos/octocat/Hello-World/stargazers</prop>
+    <prop string name="statuses_url">http://api.github.com/repos/octocat/Hello-World/statuses/{sha}</prop>
+    <prop string name="subscribers_url">http://api.github.com/repos/octocat/Hello-World/subscribers</prop>
+    <prop string name="subscription_url">http://api.github.com/repos/octocat/Hello-World/subscription</prop>
+    <prop string name="tags_url">http://api.github.com/repos/octocat/Hello-World/tags</prop>
+    <prop string name="teams_url">http://api.github.com/repos/octocat/Hello-World/teams</prop>
+    <prop string name="trees_url">http://api.github.com/repos/octocat/Hello-World/git/trees{/sha}</prop>
+    <prop string name="clone_url">https://github.com/octocat/Hello-World.git</prop>
+    <prop string name="mirror_url">git:git.example.com/octocat/Hello-World</prop>
+    <prop string name="hooks_url">http://api.github.com/repos/octocat/Hello-World/hooks</prop>
+    <prop string name="svn_url">https://svn.github.com/octocat/Hello-World</prop>
+    <prop string name="homepage">https://github.com</prop>
+    <prop number name="forks_count">9</prop>
+    <prop number name="stargazers_count">80</prop>
+    <prop number name="watchers_count">80</prop>
+    <prop number name="size">108</prop>
+    <prop string name="default_branch">master</prop>
+    <prop number name="open_issues_count">0</prop>
+    <prop boolean name="has_issues">true</prop>
+    <prop boolean name="has_projects">true</prop>
+    <prop boolean name="has_wiki">true</prop>
+    <prop boolean name="has_pages">false</prop>
+    <prop boolean name="has_downloads">true</prop>
+    <prop boolean name="archived">false</prop>
+    <prop string name="pushed_at">2011-01-26T19:06:43Z</prop>
+    <prop string name="created_at">2011-01-26T19:01:12Z</prop>
+    <prop string name="updated_at">2011-01-26T19:14:43Z</prop>
+    <prop boolean name="allow_rebase_merge">true</prop>
+    <prop boolean name="allow_squash_merge">true</prop>
+    <prop boolean name="allow_merge_commit">true</prop>
+    <prop number name="subscribers_count">42</prop>
+    <prop number name="network_count">0</prop>
+    <prop name="topics" type="string[]">
+      ["octocat", "atom", "electron", "API"]
+    </prop>
+    <prop name="permissions" type="{admin: boolean, push: boolean, pull: boolean}"/>
+    <prop string name="language"/>
+    <prop name="owner" type="Owner"/>
+  </type>
+</types>

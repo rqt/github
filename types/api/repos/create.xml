@@ -1,0 +1,28 @@
+<types>
+  <type name="CreateRepository" desc="Options to create a repository.">
+    <prop name="token" type="string">
+      The access token.
+    </prop>
+    <prop opt string name="org">
+      The organisation on which to create the repository (if not adding to the user account).
+    </prop>
+    <prop string name="name">
+      The name of the repository.
+    </prop>
+    <prop opt string name="description">
+      A short description of the repository.
+    </prop>
+    <prop opt string name="homepage">
+      A URL with more information about the repository.
+    </prop>
+    <prop opt string name="license_template">
+      Choose an [open source license template](https://choosealicense.com/) that best suits your needs, and then use the [license keyword](https://help.github.com/articles/licensing-a-repository/#searching-github-by-license-type) as the license_template string. For example, "mit" or "mpl-2.0".
+    </prop>
+    <prop opt string name="gitignore_template">
+      Desired language or platform .gitignore template to apply. Use the name of the template without the extension. For example, "Haskell".
+    </prop>
+    <prop boolean name="auto_init" default="false">
+      Pass `true` to create an initial commit with empty README.
+    </prop>
+  </type>
+</types>
