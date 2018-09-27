@@ -16,6 +16,8 @@ yarn add -E @rqt/github
 - [**Repositories**](#repositories)
   * [`async create(options: CreateRepository): Repository`](#async-createoptions-createrepository-repository)
   * [`async delete(owner: string, name: string)`](#async-deleteowner-stringname-string-void)
+- [**Activity**](#activity)
+  * [`async star(owner: string, name: string)`](#async-starowner-stringname-string-void)
 - [Types](#types)
   * [`Owner`](#type-owner)
 - [Copyright](#copyright)
@@ -194,6 +196,19 @@ Delete a repository.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
+## **Activity**
+
+These methods allow to work with activities.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
+
+### `async star(`<br/>&nbsp;&nbsp;`owner: string,`<br/>&nbsp;&nbsp;`name: string,`<br/>`): void`
+
+Star a repository.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
+
+
 ## Types
 
 These are the types used across the API.
@@ -221,7 +236,7 @@ __<a name="type-owner">`Owner`</a>__
 | __type*__                | _string_  | User                                                        |
 | __site_admin*__          | _boolean_ | false                                                       |
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
 
 ## Copyright
 
