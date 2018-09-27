@@ -28,7 +28,9 @@
   },
   "keywords": [
     "github",
-    "rqt"
+    "rqt",
+    "api",
+    "client"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
