@@ -18,10 +18,12 @@ import bosom from 'bosom'
       auto_init: true,
       gitignore_template: 'Node',
     })
-    console.log(repo.html_url)
+    console.log('Created a repository at: %s', repo.html_url)
 
     await github.activity.star(org, name)
+    console.log('Starred a repository')
     await github.repos.delete(org, name)
+    console.log('Deleted a repository')
   } catch ({ message }) {
     console.log(message)
   }

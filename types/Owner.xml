@@ -4,7 +4,7 @@
     <prop number name="id">1</prop>
     <prop string name="node_id">MDQ6VXNlcjE=</prop>
     <prop string name="avatar_url">https://github.com/images/error/octocat_happy.gif</prop>
-    <prop string name="gravatar_id"></prop>
+    <prop string name="gravatar_id" />
     <prop string name="url">https://api.github.com/users/octocat</prop>
     <prop string name="html_url">https://github.com/octocat</prop>
     <prop string name="followers_url">https://api.github.com/users/octocat/followers</prop>

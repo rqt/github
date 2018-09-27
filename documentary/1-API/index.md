@@ -3,21 +3,20 @@
 The package is available by importing its default function:
 
 ```js
-import github from '@rqt/github'
+import GitHub from '@rqt/github'
 ```
 
 %~%
 
-```## github
+```## constructor => GitHub
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["token?", "string"]
 ]
 ```
 
-Call this function to get the result you want.
+Create a new instance of a GitHub API client. If the token is given, it will be used for methods that require it.
 
-%TYPEDEF types/index.xml%
+<!-- %TYPEDEF types/index.xml% -->
 
 %EXAMPLE: example/example.js, ../src => @rqt/github%
 %FORK example example/example%
