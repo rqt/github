@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/api/activity/index.js"],"names":[],"mappings":"AAAA,MAAM,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,IAAI;;AAExB,KAAK,CAAC,QAAQ,CAAC,CAAC,CAAC;EACf,IAAI;AACN;;AAEA,MAAM,CAAC,OAAO,CAAC","file":"api/activity/index.js","sourcesContent":["import star from './star'\n\nconst activity = {\n  star,\n}\n\nexport default activity"]}
