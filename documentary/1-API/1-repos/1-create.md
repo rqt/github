@@ -10,7 +10,10 @@ Create a new repository.
 
 ---
 
-%TYPEDEF types/api/repos/Repository.xml%
+<details>
+<summary>Show Return Type</summary>
 
+%TYPEDEF types/api/repos/Repository.xml%
+</details>
 
 %~ width="15"%

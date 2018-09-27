@@ -102,6 +102,9 @@ __<a name="type-createrepository">`CreateRepository`</a>__: Options to create a 
 
 ---
 
+<details>
+<summary>Show Return Type</summary>
+
 __<a name="type-repository">`Repository`</a>__
 
 |          Name           |                       Type                       |                                       Description                                       |
@@ -181,7 +184,7 @@ __<a name="type-repository">`Repository`</a>__
 | __permissions*__        | _{admin: boolean, push: boolean, pull: boolean}_ |                                                                                         |
 | __language*__           | _string_                                         |                                                                                         |
 | __owner*__              | _[Owner](#type-owner)_                           |                                                                                         |
-
+</details>
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
 
