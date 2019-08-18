@@ -2,10 +2,10 @@
 
 %NPM: @rqt/github%
 
-`@rqt/github` is a GitHub API implementation in Node.js.
+`@rqt/github` is a _GitHub API_ implementation in Node.js.
 
 ```sh
-yarn add -E @rqt/github
+yarn add @rqt/github
 ```
 
 ## Table Of Contents
