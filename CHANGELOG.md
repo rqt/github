@@ -1,3 +1,9 @@
+## 14 September 2019
+
+### [1.1.0](https://github.com/rqt/github/compare/v1.0.0...v1.1.0)
+
+- [feature] Update dependencies.
+
 ## 28 September 2018
 
 ### 1.0.0
