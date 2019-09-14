@@ -38,12 +38,12 @@
   },
   "homepage": "https://github.com/rqt/github#readme",
   "devDependencies": {
-    "alamode": "^2.4.0",
+    "alamode": "^3.0.0",
     "bosom": "^2.0.0",
-    "documentary": "^1.32.1",
+    "documentary": "^1.33.0",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "^4.1.1-alpha"
+    "zoroaster": "^4.1.2"
   },
   "dependencies": {
     "rqt": "^4.0.0"
