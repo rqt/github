@@ -1,5 +1,5 @@
-let create = require('./create'); if (create && create.__esModule) create = create.default;
-let del = require('./delete'); if (del && del.__esModule) del = del.default;
+const create = require('./create');
+const del = require('./delete');
 
 const repos = {
   create,
@@ -7,4 +7,3 @@ const repos = {
 }
 
 module.exports=repos
-//# sourceMappingURL=index.js.map

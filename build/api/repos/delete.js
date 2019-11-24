@@ -16,4 +16,3 @@ async function del(owner, repo) {
 }
 
 module.exports=del
-//# sourceMappingURL=delete.js.map

@@ -1,8 +1,7 @@
-let star = require('./star'); if (star && star.__esModule) star = star.default;
+const star = require('./star');
 
 const activity = {
   star,
 }
 
 module.exports=activity
-//# sourceMappingURL=index.js.map

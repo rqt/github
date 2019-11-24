@@ -14,7 +14,7 @@ const USER_AGENT = [
   'https://github.com/rqt/github',
 ].join(' ')
 
-               async function request({
+async function request({
   data,
   token,
   method,
@@ -42,4 +42,3 @@ const USER_AGENT = [
 }
 
 module.exports = request
-//# sourceMappingURL=index.js.map

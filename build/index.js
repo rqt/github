@@ -1,6 +1,6 @@
-let request = require('./lib'); if (request && request.__esModule) request = request.default;
-let repos = require('./api/repos'); if (repos && repos.__esModule) repos = repos.default;
-let activity = require('./api/activity'); if (activity && activity.__esModule) activity = activity.default;
+const request = require('./lib');
+const repos = require('./api/repos');
+const activity = require('./api/activity');
 
 const proxy = (scope, instance) => {
   const p = new Proxy(scope, {
@@ -18,7 +18,7 @@ const proxy = (scope, instance) => {
 /**
  * A GitHub instance.
  */
-               class GitHub {
+class GitHub {
   /**
    * Creates a new instance of the API with the token.
    * @param {string} token The access token used for requests.
@@ -39,7 +39,7 @@ const proxy = (scope, instance) => {
   }
 }
 
-       async function starRepository(token, name, org) {
+async function starRepository(token, name, org) {
   const n = `${org}/${name}`
   const u = `user/starred/${n}`
   const { headers } = await request({
@@ -53,7 +53,7 @@ const proxy = (scope, instance) => {
   }
 }
 
-       async function deleteRepository(token, name, org) {
+async function deleteRepository(token, name, org) {
   const n = `${org}/${name}`
   const u = `repos/${n}`
   const { headers, body } = await request({
@@ -83,4 +83,3 @@ const proxy = (scope, instance) => {
 module.exports = GitHub
 module.exports.starRepository = starRepository
 module.exports.deleteRepository = deleteRepository
-//# sourceMappingURL=index.js.map

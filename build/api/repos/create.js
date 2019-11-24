@@ -154,5 +154,3 @@ module.exports=create
  * @prop {string} language
  * @prop {Owner} owner
  */
-
-//# sourceMappingURL=create.js.map
