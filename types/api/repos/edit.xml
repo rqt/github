@@ -1,0 +1,43 @@
+<types namespace="_github">
+  <type name="RepoEdit" desc="Options to edit a repository." noToc>
+    <prop opt string name="name">
+      The name of the repository.
+    </prop>
+    <prop opt string name="description">
+      A short description of the repository.
+    </prop>
+    <prop opt string name="homepage">
+      A URL with more information about the repository.
+    </prop>
+    <prop opt boolean name="private" default="false">
+      Either `true` to make the repository private or `false` to make it public. Creating private repositories requires a paid GitHub account.
+    </prop>
+    <prop opt boolean name="has_issues" default="true">
+      Either `true` to enable issues for this repository or `false` to disable them.
+    </prop>
+    <prop opt boolean name="has_projects" default="true">
+      Either `true` to enable projects for this repository or `false` to disable them.
+    </prop>
+    <prop opt boolean name="has_wiki" default="true">
+      Either `true` to enable the wiki for this repository or `false` to disable it.
+    </prop>
+    <prop opt boolean name="is_template" default="false">
+      Either `true` to make this repo available as a template repository or `false` to prevent it.
+    </prop>
+    <prop opt string name="default_branch">
+      Updates the default branch for this repository.
+    </prop>
+    <prop opt boolean name="allow_squash_merge" default="true">
+      Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
+    </prop>
+    <prop opt boolean name="allow_merge_commit" default="true">
+      Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.
+    </prop>
+    <prop opt boolean name="allow_rebase_merge" default="true">
+      Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+    </prop>
+    <prop opt boolean name="archived" default="false">
+      `true` to archive this repository. Note: You cannot unarchive repositories through the API.
+    </prop>
+  </type>
+</types>

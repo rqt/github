@@ -30,6 +30,13 @@ class GitHub {
     /** @type {activity} */
     this.activity = proxy(activity, this)
   }
+  /**
+   * @param {Object} opts
+   * @param {string} opts.endpoint Where to send the request.
+   * @param {Object} [opts.data] The data to send.
+   * @param {string} [opts.method] The HTTP method, such as GET or POST
+   * @param {Object} [opts.headers] Additional Headers.
+   */
   async _request(opts = {}) {
     const res = await request({
       token: this._token,

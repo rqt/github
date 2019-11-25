@@ -1,0 +1,16 @@
+<types namespace="_github">
+  <type name="Generate" desc="Options to generate a repository from a template." noToc>
+    <prop opt string name="owner">
+      The organisation on which to create the repository (if not adding to the user account).
+    </prop>
+    <prop string name="name">
+      The name of the repository.
+    </prop>
+    <prop opt string name="description">
+      A short description of the repository.
+    </prop>
+    <prop opt boolean name="private">
+      Whether it is a private repository.
+    </prop>
+  </type>
+</types>

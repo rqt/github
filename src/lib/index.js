@@ -19,10 +19,13 @@ export default async function request({
   token,
   method,
   endpoint,
+  headers: he = {},
 }) {
+  if (!endpoint) throw new Error('Missing endpoint')
   const h = {
     Authorization: `token ${token}`,
     'User-Agent': USER_AGENT,
+    ...he,
   }
   const url = `https://api.github.com${endpoint}`
   const { body, headers, statusCode, statusMessage } = await aqt(url, {
