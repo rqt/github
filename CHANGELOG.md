@@ -1,3 +1,9 @@
+## 25 November 2019
+
+### [1.2.0](https://github.com/rqt/github/compare/v1.1.0...v1.2.0)
+
+- [feature] Add `repos.edit` and `repos.generate` methods.
+
 ## 14 September 2019
 
 ### [1.1.0](https://github.com/rqt/github/compare/v1.0.0...v1.1.0)
