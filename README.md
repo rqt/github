@@ -1,6 +1,6 @@
 # @rqt/github
 
-[![npm version](https://badge.fury.io/js/%40rqt%2Fgithub.svg)](https://npmjs.org/package/@rqt/github)
+[![npm version](https://badge.fury.io/js/%40rqt%2Fgithub.svg)](https://www.npmjs.com/package/@rqt/github)
 
 `@rqt/github` is a _GitHub API_ implementation in Node.js.
 
@@ -16,6 +16,8 @@ yarn add @rqt/github
 - [**Repositories**](#repositories)
   * [`async create(options: CreateRepository): Repository`](#async-createoptions-createrepository-repository)
   * [`async delete(owner: string, name: string)`](#async-deleteowner-stringname-string-void)
+  * [`async edit(options: Edit)`](#async-editoptions-edit-void)
+  * [`async generate(string: templateOwner, string: templateName, options: Generate): Repository`](#async-generatestring-templateownerstring-templatenameoptions-generate-repository)
 - [**Activity**](#activity)
   * [`async star(owner: string, name: string)`](#async-starowner-stringname-string-void)
 - [Types](#types)
@@ -204,8 +206,47 @@ Delete a repository.
 
 
 
+### <code>async <ins>edit</ins>(</code><sub><br/>&nbsp;&nbsp;`options: Edit,`<br/></sub><code>): <i>void</i></code>
+
+Makes changes to the repository.
+
+<strong><a name="type-_githubrepoedit">`_github.RepoEdit`</a></strong>: Options to edit a repository.
+
+|        Name        |       Type       |                                                               Description                                                                | Default |
+| ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| name               | <em>string</em>  | The name of the repository.                                                                                                              | -       |
+| description        | <em>string</em>  | A short description of the repository.                                                                                                   | -       |
+| homepage           | <em>string</em>  | A URL with more information about the repository.                                                                                        | -       |
+| private            | <em>boolean</em> | Either `true` to make the repository private or `false` to make it public. Creating private repositories requires a paid GitHub account. | `false` |
+| has_issues         | <em>boolean</em> | Either `true` to enable issues for this repository or `false` to disable them.                                                           | `true`  |
+| has_projects       | <em>boolean</em> | Either `true` to enable projects for this repository or `false` to disable them.                                                         | `true`  |
+| has_wiki           | <em>boolean</em> | Either `true` to enable the wiki for this repository or `false` to disable it.                                                           | `true`  |
+| is_template        | <em>boolean</em> | Either `true` to make this repo available as a template repository or `false` to prevent it.                                             | `false` |
+| default_branch     | <em>string</em>  | Updates the default branch for this repository.                                                                                          | -       |
+| allow_squash_merge | <em>boolean</em> | Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.                                               | `true`  |
+| allow_merge_commit | <em>boolean</em> | Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits.        | `true`  |
+| allow_rebase_merge | <em>boolean</em> | Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.                                               | `true`  |
+| archived           | <em>boolean</em> | `true` to archive this repository. Note: You cannot unarchive repositories through the API.                                              | `false` |
+
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/5.svg?sanitize=true">
+</a></p>
+
+### <code>async <ins>generate</ins>(</code><sub><br/>&nbsp;&nbsp;`string: templateOwner,`<br/>&nbsp;&nbsp;`string: templateName,`<br/>&nbsp;&nbsp;`options: Generate,`<br/></sub><code>): <i>Repository</i></code>
+
+Generates a new repository from the template.
+
+<strong><a name="type-_githubgenerate">`_github.Generate`</a></strong>: Options to generate a repository from a template.
+
+|    Name     |       Type       |                                       Description                                       |
+| ----------- | ---------------- | --------------------------------------------------------------------------------------- |
+| owner       | <em>string</em>  | The organisation on which to create the repository (if not adding to the user account). |
+| __name*__   | <em>string</em>  | The name of the repository.                                                             |
+| description | <em>string</em>  | A short description of the repository.                                                  |
+| private     | <em>boolean</em> | Whether it is a private repository.                                                     |
+
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/6.svg?sanitize=true">
 </a></p>
 
 ## **Activity**
@@ -213,7 +254,7 @@ Delete a repository.
 These methods allow to work with activities.
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/6.svg?sanitize=true" width="15">
+  <img src="/.documentary/section-breaks/7.svg?sanitize=true" width="15">
 </a></p>
 
 ### <code>async <ins>star</ins>(</code><sub><br/>&nbsp;&nbsp;`owner: string,`<br/>&nbsp;&nbsp;`name: string,`<br/></sub><code>): <i>void</i></code>
@@ -221,7 +262,7 @@ These methods allow to work with activities.
 Star a repository.
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/7.svg?sanitize=true">
+  <img src="/.documentary/section-breaks/8.svg?sanitize=true">
 </a></p>
 
 
@@ -253,7 +294,7 @@ __<a name="type-owner">`Owner`</a>__
 | __site_admin*__          | <em>boolean</em> | false                                                       |
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/8.svg?sanitize=true">
+  <img src="/.documentary/section-breaks/9.svg?sanitize=true">
 </a></p>
 
 ## Copyright
