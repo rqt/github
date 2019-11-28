@@ -21,7 +21,8 @@ yarn add @rqt/github
 - [**Activity**](#activity)
   * [`async star(owner: string, name: string)`](#async-starowner-stringname-string-void)
 - [**Pages**](#pages)
-  * [`Page`](#type-page)
+  * [**Enable**](#enable)
+    * [`Page`](#type-page)
 - [Types](#types)
   * [`Owner`](#type-owner)
 - [Copyright](#copyright)
@@ -274,13 +275,15 @@ Publishing and editing _GitHub_ pages.
 
 https://developer.github.com/v3/repos/pages
 
-<p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/9.svg?sanitize=true" width="25">
-</a></p>
+### **Enable**
 
-### **Enable**
+__<a name="type-enablepages">`EnablePages`</a>__: Options to enable pages.
 
 
+|  Name  |      Type       |                                        Description                                         | Default  |
+| ------ | --------------- | ------------------------------------------------------------------------------------------ | -------- |
+| branch | <em>string</em> | The branch, either `master` or `gh-pages`.                                                 | `master` |
+| path   | <em>string</em> | When setting branch to master, this can be set to `/docs`,<br/>otherwise it has to be `/`. | `/docs`  |
 
 <details>
 <summary>Show Return Type</summary>
@@ -362,7 +365,7 @@ The source.
 </details>
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/10.svg?sanitize=true">
+  <img src="/.documentary/section-breaks/9.svg?sanitize=true">
 </a></p>
 
 ## Types
@@ -393,7 +396,7 @@ __<a name="type-owner">`Owner`</a>__
 | __site_admin*__          | <em>boolean</em> | false                                                       |
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/11.svg?sanitize=true">
+  <img src="/.documentary/section-breaks/10.svg?sanitize=true">
 </a></p>
 
 ## Copyright
