@@ -1,6 +1,7 @@
 import request from './lib'
 import repos from './api/repos'
 import activity from './api/activity'
+import pages from './api/pages'
 
 const proxy = (scope, instance) => {
   const p = new Proxy(scope, {
@@ -29,6 +30,8 @@ export default class GitHub {
     this.repos = proxy(repos, this)
     /** @type {activity} */
     this.activity = proxy(activity, this)
+    /** @type {pages} */
+    this.pages = proxy(pages, this)
   }
   /**
    * @param {Object} opts
@@ -73,7 +76,7 @@ export async function deleteRepository(token, name, org) {
   }
 }
 
-/* documentary types/index.xml */
+/* typal types/index.xml */
 /**
  * @typedef {Object} CreateRepository Options to create a repository.
  * @prop {string} token The access token.

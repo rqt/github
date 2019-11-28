@@ -20,6 +20,8 @@ yarn add @rqt/github
   * [`async generate(string: templateOwner, string: templateName, options: Generate): Repository`](#async-generatestring-templateownerstring-templatenameoptions-generate-repository)
 - [**Activity**](#activity)
   * [`async star(owner: string, name: string)`](#async-starowner-stringname-string-void)
+- [**Pages**](#pages)
+  * [`Page`](#type-page)
 - [Types](#types)
   * [`Owner`](#type-owner)
 - [Copyright](#copyright)
@@ -210,7 +212,7 @@ Delete a repository.
 
 Makes changes to the repository.
 
-<strong><a name="type-_githubrepoedit">`_github.RepoEdit`</a></strong>: Options to edit a repository.
+__<a name="type-repoedit">`RepoEdit`</a>__: Options to edit a repository.
 
 |        Name        |       Type       |                                                               Description                                                                | Default |
 | ------------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------- |
@@ -236,7 +238,7 @@ Makes changes to the repository.
 
 Generates a new repository from the template.
 
-<strong><a name="type-_githubgenerate">`_github.Generate`</a></strong>: Options to generate a repository from a template.
+__<a name="type-generate">`Generate`</a>__: Options to generate a repository from a template.
 
 |    Name     |       Type       |                                       Description                                       |
 | ----------- | ---------------- | --------------------------------------------------------------------------------------- |
@@ -266,6 +268,103 @@ Star a repository.
 </a></p>
 
 
+## **Pages**
+
+Publishing and editing _GitHub_ pages.
+
+https://developer.github.com/v3/repos/pages
+
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/9.svg?sanitize=true" width="25">
+</a></p>
+
+### **Enable**
+
+
+
+<details>
+<summary>Show Return Type</summary>
+
+__<a name="type-page">`Page`</a>__: The enabled page object.
+<table>
+ <thead><tr>
+  <th>Name</th>
+  <th>Type &amp; Description</th>
+ </tr></thead>
+ <tr>
+  <td rowSpan="3" align="center"><strong>url*</strong></td>
+  <td><em>string</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+   <code>https://api.github.com/repos/github/developer.github.com/pages</code>
+  </td>
+ </tr>
+ <tr>
+  <td rowSpan="3" align="center"><strong>status*</strong></td>
+  <td><em>string</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+   <code>built</code>
+  </td>
+ </tr>
+ <tr>
+  <td rowSpan="3" align="center"><strong>cname*</strong></td>
+  <td><em>string</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+   <code>developer.github.com</code>
+  </td>
+ </tr>
+ <tr>
+  <td rowSpan="3" align="center"><strong>custom_404*</strong></td>
+  <td><em>boolean</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+   <code>false</code>
+  </td>
+ </tr>
+ <tr>
+  <td rowSpan="3" align="center"><strong>html_url*</strong></td>
+  <td><em>string</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+   <code>https://developer.github.com</code>
+  </td>
+ </tr>
+ <tr>
+  <td rowSpan="3" align="center"><strong>source*</strong></td>
+  <td><em>{ branch: string, directory: string }</em></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>
+
+The source.
+```json
+"source": {
+  "branch": "master",
+  "directory": "/"
+}
+```
+  </td>
+ </tr>
+</table>
+</details>
+
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/10.svg?sanitize=true">
+</a></p>
+
 ## Types
 
 These are the types used across the API.
@@ -294,7 +393,7 @@ __<a name="type-owner">`Owner`</a>__
 | __site_admin*__          | <em>boolean</em> | false                                                       |
 
 <p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/9.svg?sanitize=true">
+  <img src="/.documentary/section-breaks/11.svg?sanitize=true">
 </a></p>
 
 ## Copyright
