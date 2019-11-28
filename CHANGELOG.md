@@ -1,3 +1,9 @@
+## 29 November 2019
+
+### [1.3.0](https://github.com/rqt/github/compare/v1.2.0...v1.3.0)
+
+- [feature] Enable _GitHub_ pages.
+
 ## 25 November 2019
 
 ### [1.2.0](https://github.com/rqt/github/compare/v1.1.0...v1.2.0)
