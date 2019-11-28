@@ -1,4 +1,4 @@
-<types>
+<types namespace="_github">
   <type name="CreateRepository" desc="Options to create a repository." noToc>
     <prop opt string name="org">
       The organisation on which to create the repository (if not adding to the user account).

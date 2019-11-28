@@ -2,7 +2,10 @@
  * Enable a Pages site.
  * @param {string} owner
  * @param {string} repo
- * @param {EnablePages} config
+ * @param {_github.EnablePages} [config] Options to enable pages.
+ * @param {string} [config.branch="master"] The branch, either `master` or `gh-pages`. Default `master`.
+ * @param {string} [config.path="/docs"] When setting branch to master, this can be set to `/docs`,
+ * otherwise it has to be `/`. Default `/docs`.
  */
 async function enable(owner, repo, config = {}) {
   const { branch = 'master', path = '/docs' } = config
@@ -22,7 +25,7 @@ async function enable(owner, repo, config = {}) {
   if (body.message == 'Not Found') {
     throw new Error(`Repo ${owner}/${repo} not found.`)
   }
-  /** @type {Page} */
+  /** @type {_github.Page} */
   const r = body
   return r
 }
@@ -31,23 +34,11 @@ export default {
   enable,
 }
 
-/* typal types/api/pages/index.xml */
 /**
- * @typedef {Object} EnablePages Options to enable pages.
- * @prop {string} [branch="master"] The branch, either `master` or `gh-pages`. Default `master`.
- * @prop {string} [path="/docs"] When setting branch to master, this can be set to `/docs`,
- * otherwise it has to be `/`. Default `/docs`.
- * @typedef {Object} Page The enabled page object.
- * @prop {string} url `https://api.github.com/repos/github/developer.github.com/pages`
- * @prop {string} status `built`
- * @prop {string} cname `developer.github.com`
- * @prop {boolean} custom_404 `false`
- * @prop {string} html_url `https://developer.github.com`
- * @prop {{ branch: string, directory: string }} source The source.
- * ```json
- * "source": {
- *   "branch": "master",
- *   "directory": "/"
- * }
- * ```
+ * @suppress {nonStandardJsDocs}
+ * @typedef {import('../../../types').EnablePages} _github.EnablePages
+ */
+/**
+ * @suppress {nonStandardJsDocs}
+ * @typedef {import('../../../types').Page} _github.Page
  */

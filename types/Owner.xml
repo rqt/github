@@ -1,4 +1,4 @@
-<types>
+<types namespace="_github">
   <type name="Owner">
     <prop string name="login">octocat</prop>
     <prop number name="id">1</prop>

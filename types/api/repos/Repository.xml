@@ -1,4 +1,4 @@
-<types>
+<types namespace="_github">
   <type name="Repository" noToc>
     <prop number name="id">1296269</prop>
     <prop string name="node_id">MDEwOlJlcG9zaXRvcnkxMjk2MjY5</prop>
