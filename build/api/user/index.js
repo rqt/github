@@ -6,7 +6,7 @@
 async function star(name, org) {
   const n = `${org}/${name}`
   const endpoint = `user/starred/${n}`
-  const { headers, body } = await this._request({
+  const { headers } = await this._request({
     method: 'PUT',
     data: {},
     endpoint,
@@ -14,7 +14,6 @@ async function star(name, org) {
   if (headers.status != '204 No Content') {
     throw new Error(`Could not star the ${n} repository`)
   }
-  return body
 }
 
 module.exports={

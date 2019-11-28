@@ -1,8 +1,9 @@
-const { aqt } = require('rqt');
+const { aqt } = require('../../stdlib');
+const { format } = require('url');
 
 const reduceErrors = (errors) => {
   const reduced = errors.reduce((acc, error) => {
-    const errMsg = `${error.resource}: ${error.message}`
+    const errMsg = `${error['resource']}: ${error['message']}`
     return `${errMsg}\n${acc}`
   }, '').trim()
   return reduced
@@ -10,7 +11,7 @@ const reduceErrors = (errors) => {
 
 const USER_AGENT = [
   'Mozilla/5.0',
-  '(Node.js; @rqt/github)',
+  '(Node.JS; @rqt/github)',
   'https://github.com/rqt/github',
 ].join(' ')
 
@@ -27,7 +28,11 @@ async function request({
     'User-Agent': USER_AGENT,
     ...he,
   }
-  const url = `https://api.github.com${endpoint}`
+  const url = format({
+    protocol: 'https',
+    host: 'api.github.com',
+    pathname: endpoint,
+  })
   const { body, headers, statusCode, statusMessage } = await aqt(url, {
     headers: h,
     data,

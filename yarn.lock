@@ -47,6 +47,14 @@ catchment@^1.0.0:
   resolved "https://registry.yarnpkg.com/catchment/-/catchment-1.0.0.tgz#3061f71be0102710be84328d2f94363a165f8c4b"
   integrity sha1-MGH3G+AQJxC+hDKNL5Q2OhZfjEs=
 
+catchment@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/catchment/-/catchment-3.3.0.tgz#e57eb70183d6a75ee71da0cb8ec2e76ac01317d2"
+  integrity sha512-PACm54CBCUZv1uEOMyNiB6i0kkDMdDN0+VYXIQAaeZMDcjudyPccgpYLWQfGCwCW/Q9SOfD6MyBLmxL3qh7V3A==
+  dependencies:
+    "@artdeco/clean-stack" "^1.1.1"
+    erotic "^2.1.0"
+
 depack@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/depack/-/depack-1.0.0.tgz#d373bba9eeb569d9707cd3cfdd45a20fbe518c9a"
@@ -64,7 +72,7 @@ documentary@^1.34.1:
     preact "8.5.2"
     typal "^1.22.6"
 
-erotic@^2.1.1:
+erotic@^2.1.0, erotic@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/erotic/-/erotic-2.1.1.tgz#97f20c2d6e7fd2ec6f7996823009d3ac8ae7157f"
   integrity sha512-S1ns+uibigdXxxzqiO5VNZw3d0YNrVb4jZ7OUAklO4722/ytp+nta6txsUhYmnIEI0TF7jjXNjGvcmw0I/Rs7A==

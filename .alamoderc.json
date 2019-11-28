@@ -10,6 +10,9 @@
     }
   },
   "import": {
-    "stdlib": ["rqt"]
+    "stdlib": {
+      "path": "stdlib",
+      "packages": ["rqt"]
+    }
   }
 }
