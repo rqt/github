@@ -1,9 +1,9 @@
 /**
  * Start the repo as logged in user.
- * @param {string} name
  * @param {string} org
+ * @param {string} name
  */
-async function star(name, org) {
+async function star(org, name) {
   const n = `${org}/${name}`
   const endpoint = `user/starred/${n}`
   const { headers, body } = await this._request({
