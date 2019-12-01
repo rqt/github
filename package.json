@@ -24,7 +24,8 @@
   },
   "files": [
     "build",
-    "stdlib"
+    "stdlib",
+    "types/index.js"
   ],
   "repository": {
     "type": "git",

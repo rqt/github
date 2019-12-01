@@ -1,5 +1,9 @@
 ## 1 December 2019
 
+### [1.3.1](https://github.com/rqt/github/compare/v1.3.0...v1.3.1)
+
+- [docs] Publish `types/index.js` with types.
+
 ### [1.3.0](https://github.com/rqt/github/compare/v1.2.0...v1.3.0)
 
 - [docs] Create Wiki for documentation.
