@@ -1,4 +1,4 @@
-```### async generate => Repository
+```## async generate => Repository
 [
   ["string", "templateOwner"],
   ["string", "templateName"],

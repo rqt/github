@@ -1,10 +1,12 @@
-## **Pages**
-
 Publishing and editing _GitHub_ pages.
 
 https://developer.github.com/v3/repos/pages
 
-### **Enable**
+%TOC%
+
+%~%
+
+## Enable
 
 <typedef name="EnablePages">types/api/pages/index.xml</typedef>
 
@@ -13,5 +15,3 @@ https://developer.github.com/v3/repos/pages
 
 <typedef name="Page" narrow>types/api/pages/index.xml</typedef>
 </details>
-
-%~%
