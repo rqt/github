@@ -4,7 +4,7 @@
 
 ## Copyright
 
-Documentation descriptions by GitHub.
+Documentation descriptions by _GitHub_.
 
 <footer client="Rqt" />
 

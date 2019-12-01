@@ -8,6 +8,8 @@
 yarn add @rqt/github
 ```
 
+<kbd>📙 Read all API documentation in [Wiki](../../wiki)</kbd>
+
 ## Table Of Contents
 
 %TOC%

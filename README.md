@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40rqt%2Fgithub.svg)](https://www.npmjs.com/package/@rqt/github)
 
-`@rqt/github` is a _GitHub API_ implementation in Node.js.
+`@rqt/github` is a _GitHub API_ implementation in _Node.JS_.
 
 ```sh
 yarn add @rqt/github

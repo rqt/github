@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "stdlib": "depack src/stdlib -o stdlib/index.js -a -c -p -s",
     "doc": "NODE_DEBUG=doc doc -o README.md -n _github",
+    "wiki": "NODE_DEBUG=doc doc dwiki -W wiki -n _github",
     "b": "alamode src -o build -i stdlib.js -s",
     "d": "yarn-s d1 d2 externs",
     "d1": "typal types/index.js -u",
