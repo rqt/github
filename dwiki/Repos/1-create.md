@@ -8,12 +8,7 @@ Create a new repository.
 
 %TYPEDEF types/api/repos/create.xml%
 
----
-
-<details>
-<summary>Show Return Type</summary>
-
-%TYPEDEF types/api/repos/Repository.xml%
-</details>
+<typedef details="Repository">types/api/repos/Repository.xml</typedef>
+<typedef details="Owner">types/Owner.xml</typedef>
 
 %~%

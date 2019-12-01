@@ -76,6 +76,6 @@
     </prop>
     <prop name="permissions" type="{admin: boolean, push: boolean, pull: boolean}"/>
     <prop string name="language"/>
-    <prop name="owner" type="Owner"/>
+    <prop name="owner" type="_github.Owner"/>
   </type>
 </types>
