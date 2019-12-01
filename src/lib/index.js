@@ -3,7 +3,12 @@ import { format } from 'url'
 
 const reduceErrors = (errors) => {
   const reduced = errors.reduce((acc, error) => {
-    const errMsg = `${error['resource']}: ${error['message']}`
+    let errMsg
+    if (typeof error == 'string') {
+      errMsg = error
+    } else {
+      errMsg = `${error['resource']}: ${error['message']}`
+    }
     return `${errMsg}\n${acc}`
   }, '').trim()
   return reduced
